@@ -1,0 +1,23 @@
+touch index.html                            #create file
+git init                                    #initialize git folder
+git config --global user.name 'username'    #
+git config --global user.name 'username'    #
+git add index.html
+git status
+git rm -r --cached .                        #delete from cache everything
+git rm --cached index.html                  #delete index
+git add *.html                              #add html only
+git add .                                   #add all files
+git commit -m 'changes'
+touch .gitignore                            #create hidden folder 
+                                            #where must be written files wich will be ignored
+touch log.txt                               #write it into .gitignore
+git branch login                            #creates branch 'login'
+git checkout login                          #switch from master to login
+git checkout -b login                       #same as branch + checkout
+git merge login                             #merge
+git remote add origin https://              #add into repo
+git push -u origin master
+git push                                    #upload
+git pull                                    #download/update
+git clone https://                          #clone from link to folder
